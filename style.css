@@ -1,0 +1,715 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    position: relative;
+}
+@keyframes animal{
+    0%{
+        top: 00px;
+        right: 00px;
+        bottom: 00px;
+        left: -350px;
+        font-size: 50%;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 6;
+}
+nav{
+    padding: 1.5rem;
+    background-color: rgb(68, 70, 69);
+}
+nav img{
+    height: 5rem;
+    width: 5rem;
+    margin-left: 16rem;
+}
+nav i{
+    margin-right: 16rem;
+    float: right;
+}
+.head-section{
+    background-image: url('img/istanbul2.jpg');
+    background-size: cover;
+    min-height: 60rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.head-section h2, .head-section p, .head-section button{
+    margin-top: 5rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.head-section h2{
+    font-size: 2.8rem;
+    letter-spacing: 1.2rem;
+    word-spacing: 1.3rem;
+    text-shadow: 0rem 0.2rem 0.6rem 0rem;
+}
+.head-section p{
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+}
+.head-section button{
+    width: 12rem;
+    padding: 1rem;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+}
+.head-section button:hover{
+    background-color: gray;
+    border:0.1rem yellow;
+}
+.hill-section{
+    text-align: center;
+    height: 60rem;
+    padding-top: 10rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    animation-fill-mode:forwards;
+    position: relative;
+}
+.hill-section img, .hill-section p{
+    margin-top: 8rem;
+    font-size: 1.7rem;
+}
+.services-section{
+    background-color: dimgray;
+    min-height: 100rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+.services-section h2{
+    font-size: 2.6rem;
+    letter-spacing: 1.1rem;
+}
+.services-section p{
+    font-size: 1.7rem;
+}
+.services-section img, .services-section h2, .services-section p{
+    margin-top: 4rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+
+.services-section .services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 5rem;
+    margin-top: 8rem;
+}
+.services-section .services h3{
+    font-size: 2rem;
+    padding-top: 4rem;
+}
+.services-section .services p{
+    font-size: 1.5rem;
+    font-family: 'Arial Narrow', sans-serif;
+}
+.services .Graphics, .Web, .Web-2, .Apps{
+    background-color: white;
+    padding: 2rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.skill-set{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 5rem;
+    margin-top: 10rem;
+    text-align: left;
+    font-size: 1.5rem;
+    animation-name: animal;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    animation-duration: 2500ms;
+    position: relative;
+}
+.skill-set progress{
+    background-color: green;
+    width: 25rem;
+}
+ .photo-shop,.user-interface,.front-end,.back-end{
+    background-color: white;
+    padding: 2.2rem;
+}
+.history{
+    background-color: black;
+    min-height: 22rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 8rem;
+    padding-top: 8rem;
+}
+.history h2, .history p{
+    padding: 0.8rem 1.8rem;
+    font-size: 1.6rem;
+    background-color: white;
+    color: gray;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.history h2{
+    font-size: 2rem;
+    color: black;
+}
+.portfolio-section{
+    text-align: center;
+    background-color: white;
+    padding-top: 6rem;
+    min-height: 60rem;
+}
+.portfolio-section img,.portfolio-section h2,.portfolio-section p{
+    margin-top: 4rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.portfolio-section h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.5rem;
+}
+.portfolio-section p{
+    font-size: 1.6rem;
+    color: gray;
+}
+.portfolio-section ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: 8rem;
+    column-gap: 8.5rem;
+}
+.portfolio-section ul li{
+    font-size: 1.7rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.portfolio-section ul li a:hover{
+    text-decoration: underline yellow;
+}
+.portfolio-section ul li img{
+    position: relative;
+    top: 4rem;
+    animation-name: animali;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+@keyframes animali{
+    0%{
+        top: 00px;
+        right: 00px;
+        bottom: 00px;
+        left: -350px;
+        font-size: 50%;
+        opacity: 0;
+    }
+    100%{
+        top: 4rem;
+        opacity: 1;
+    }
+}
+.gallery-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: rgb(155, 151, 151);
+}
+.gallery-section .img-container{
+    position: relative;
+    box-sizing: border-box;
+}
+#gallery-1,#gallery-2,#gallery-3,#gallery-4{
+    width: 37.9rem;
+    height: 32rem;
+    display: block;
+    opacity: 0.7;
+    z-index: 3;
+}
+
+.gallery-section .yellow-block{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: yellow;
+    width: 70%;
+    height: 80%;
+    bottom: 0;
+    margin: auto;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+.img-container:hover .yellow-block {
+    opacity: 1;
+}
+.text-block {
+    background-color: #f5f7f8;
+    
+    margin:auto;
+    height: 60%;
+    transition: .5s ease;
+    position: absolute;
+    left: -15%;
+    right: -15%;
+    
+  }
+   .text {
+      white-space:nowrap; 
+      color: rgb(7, 7, 7);
+      font-size: 1.4rem;
+      text-align: center;
+      font-family:'Courier New', Courier, monospace;
+    }
+    .img-container .text h2,.text p{
+        margin-top: 2rem;
+    }
+
+.button-section{
+    min-height: 15rem;
+    background-color: rgb(12, 11, 11);
+    text-align: center;
+    padding-top: 5.5rem;
+}
+.button-section button{
+    background-color: rgb(240, 240, 21);
+    width: 20rem;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 0.1rem solid rgb(235, 235, 28);
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.button-section button:hover{
+    background-color: white;
+}
+.video-section{
+    background-color: rgb(49, 47, 47);
+    min-height: 30rem;
+    text-align: center;
+    padding-top: 13.5rem;
+}
+.video-section button{
+    background-color: rgb(49, 47, 47);
+    border: 0.1rem solid yellow;
+    width: 30rem;
+    font-size: 1.6rem;
+    padding: 2rem 3rem;
+    font-weight: bold;
+    color: yellow;
+    cursor: pointer;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.video-section button:hover{
+    background-color: yellow;
+    color: black;
+}
+.team-section{
+    background-color: white;
+    max-height: 165rem;
+    text-align: center;
+    padding-top: 7rem;
+    position: relative;
+}
+.team-section h2{
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+}
+.team-section p{
+    font-size: 1.6rem;
+}
+.team-section img, .team-section h2, .team-section p{
+    margin-top: 4rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.team-section .team-members{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 5rem;
+}
+.team-section .team-members .country-img{
+    width: 25rem;
+    height: 33rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.member-1 h4, .member-2 h4, .member-3 h4, .member-4 h4{
+    font-size: 2rem;
+    padding-top: 1rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.member-1 p, .member-2 p, .member-3 p, .member-4 p{
+    font-size: 1.5rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.mess{
+    margin-top: 4rem;
+    min-height: 30rem;
+}
+ .mess .description{
+    margin-top: 7rem;
+    background-color: black;
+    width: 50rem;
+    height: 40rem;
+    color: white;
+    padding: 4rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    text-align: left;
+    position: relative;
+    left: 20rem;
+    z-index: 4;
+    animation-name: bird;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+}
+@keyframes bird{
+    0%{
+        top: 00px;
+        right: 00px;
+        bottom: 00px;
+        left: -350px;
+        font-size: 50%;
+        opacity: 0;
+    }
+    100%{
+        left: 20rem;
+        width: 50rem;
+        height: 40rem;
+        z-index: 4;
+        line-height: 2.5rem;
+        text-align: left;
+        padding: 4rem;
+        opacity: 1;
+        margin-top: 7rem;
+    }
+}
+.mess .quote-1{
+    position: relative;
+    max-width: 50%;
+    left: 60rem;
+    bottom: 30rem;
+    font-size: 1.7rem;
+    animation-name: bird0;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+}
+@keyframes bird0{
+    0%{
+        top: 00px;
+        right: 00px;
+        bottom: 00px;
+        left: -350px;
+        font-size: 50%;
+        opacity: 0;
+    }
+    100%{
+        left: 60rem;
+        bottom: 30rem;
+        max-width: 50%;
+        opacity: 1;
+    }
+}
+
+.quote-1 p{
+    position: relative;
+    left: 14rem;
+    bottom: 1rem;
+    font-weight: bold;
+}
+.mess .quote-2{
+    position: relative;
+    right: 33rem;
+    bottom: 2rem;
+    font-size: 1.7rem;
+    animation-name: bird1;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.quote-2 p{
+    font-weight: bold;
+    position: relative;
+    right: 12rem;
+    bottom: 1rem;
+}
+@keyframes bird1{
+    0%{
+        top: 00px;
+        right: 00px;
+        bottom: 00px;
+        left: -350px;
+        font-size: 50%;
+        opacity: 0;
+    }
+    100%{
+        right: 33rem;
+        bottom: 2rem;
+        
+        opacity: 1;
+    }
+}
+.mess .yellow-box{
+    background-color: yellow;
+    height: 20rem;
+    position: relative;
+    bottom: 38rem;
+    z-index: 3;
+    animation-name: bird5;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+}
+@keyframes bird5{
+    0%{
+        top: 00px;
+        right: 00px;
+        bottom: 00px;
+        left: -350px;
+        font-size: 50%;
+        opacity: 0;
+    }
+    100%{
+        bottom: 38rem;
+        opacity: 1;
+        height: 20rem;
+        z-index: 3;
+    }
+}    
+ #q-img {
+    height: 35.5rem;
+    width: 50rem;
+    position: relative;
+    animation-name: bird2;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    right:-31rem;
+    z-index: 4;
+}
+@keyframes bird2{
+    0%{
+        top: 00px;
+        right: 00px;
+        bottom: 00px;
+        left: -350px;
+        font-size: 50%;
+        opacity: 0;
+    }
+    100%{
+        right: -31rem;
+        opacity: 1;
+        height: 35.5rem;
+        width: 50rem;
+        z-index: 4;
+    }
+}
+.footer{
+    background-color: rgb(19, 18, 18);
+    color:silver;
+    min-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 4rem;
+    padding-top: 5rem;
+}
+.footer .about p, .about address{
+    margin-top: 3rem;
+    color: silver;
+}
+.about address{
+    font-size: 1.5rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.footer-links ul li, .about-us ul li{
+    margin-top: 3rem;
+    color: silver;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+ .footer .contact-us p, .contact-us button, .contact-us img{
+     margin-top: 3rem;
+     animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.footer .contact-us img{
+    margin-left: 1rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.footer .contact-us button{
+    width: 20rem;
+    background-color: yellow;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 1.5rem;
+}
+.footer h3{
+    font-size: 2rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.footer p{
+    font-size: 1.4rem;
+    animation-name: animal;
+    animation-duration: 2500ms;
+    animation-fill-mode:forwards;
+    animation-timing-function: cubic-bezier(0.5, 0.05, 0.6, 0.15);
+    position: relative;
+}
+.footer a{
+    color: silver;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+@media (max-width:500px){
+    .services-section .services{
+        float: none;
+        max-width: 100%;
+        flex: 100%;
+    }
+    .skill-set{
+        float: none;
+        max-width: 100%;
+        flex:100%;
+    }
+    .history{
+        float: none;
+        max-width: 100%;
+        flex: 100%;
+    }
+    .portfolio-section ul{
+        float: none;
+        max-width: 100%;
+        flex: 100%;
+    }
+    .gallery-section {
+        float: none;
+        max-width: 100%;
+        flex: 100%;
+    }
+    .team-section .team-members{
+        float: none;
+        max-width: 100%;
+        flex: 100%;
+    }
+    .mess{
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+    .footer{
+        float: none;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
